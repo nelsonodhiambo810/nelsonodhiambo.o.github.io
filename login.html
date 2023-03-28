@@ -1,0 +1,28 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('form').submit(function() {
+          $('input[type="submit"]').attr('disabled', true);
+          $('input[type="submit"]').val('Loading...');
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Login</h2>
+    <form action="general.html" method="post">
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br><br>
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br><br>
+      <input type="submit" value="Login">
+    </form>
+  </body>
+</html>
